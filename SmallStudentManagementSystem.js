@@ -35,9 +35,9 @@ searchStudent(8);
 
 function calculateAverage(id) {
     let total = 0;
-    students.filter(i => {
-       total += i.marks;
-    })
+    students.forEach(i => {
+    total += i.marks;
+});
    console.log(total/ students.length)
 }
 
